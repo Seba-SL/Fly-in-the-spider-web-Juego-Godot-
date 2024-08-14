@@ -11,7 +11,7 @@
 [node name="Escenario" type="Node2D"]
 
 [node name="suelo" type="Sprite2D" parent="."]
-position = Vector2(606, 598)
+position = Vector2(600, 600)
 rotation = 3.14159
 texture = ExtResource("1_0orfl")
 
@@ -22,13 +22,13 @@ position = Vector2(23, 179)
 position = Vector2(448, 323)
 
 [node name="Roca" parent="." instance=ExtResource("4_72bm7")]
-position = Vector2(561, 650)
+position = Vector2(565, 448)
 
 [node name="Arbusto1" parent="." instance=ExtResource("5_vo5q5")]
-position = Vector2(998, 1107)
+position = Vector2(1003, 84)
 
 [node name="Arbusto2" parent="." instance=ExtResource("6_ndqne")]
 position = Vector2(157, 181)
 
 [node name="hoja" parent="." instance=ExtResource("7_nfh66")]
-position = Vector2(168, 1012)
+position = Vector2(814, 918)

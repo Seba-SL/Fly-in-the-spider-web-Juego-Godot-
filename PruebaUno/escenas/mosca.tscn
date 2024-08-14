@@ -1,10 +1,21 @@
-[gd_scene load_steps=4 format=3 uid="uid://c46wsdj422tan"]
+[gd_scene load_steps=5 format=3 uid="uid://c46wsdj422tan"]
 
 [ext_resource type="Texture2D" uid="uid://dsn6x54jtqknv" path="res://recursos/art/Mosca/volar.png" id="1_ekk8c"]
 [ext_resource type="Script" path="res://scripts/mosca.gd" id="1_sukv1"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_kkbsr"]
 radius = 15.0333
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dmj66"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ekk8c")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Mosca" type="Node2D"]
 top_level = true
@@ -17,7 +28,7 @@ top_level = true
 position = Vector2(110, 104)
 shape = SubResource("CircleShape2D_kkbsr")
 
-[node name="mosca_sp" type="Sprite2D" parent="mosca"]
-position = Vector2(109, 99)
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="mosca"]
+position = Vector2(111, 105)
 scale = Vector2(0.1, 0.1)
-texture = ExtResource("1_ekk8c")
+sprite_frames = SubResource("SpriteFrames_dmj66")
