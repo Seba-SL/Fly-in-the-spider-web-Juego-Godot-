@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4d80sqiqo2wp"]
+
+[ext_resource type="PackedScene" uid="uid://dqgjch5jxkjb0" path="res://escenas/arbusto_1.tscn" id="1_ggxx6"]
+
+[node name="Arbusto2" type="Node2D"]
+
+[node name="Arbusto1" parent="." instance=ExtResource("1_ggxx6")]
