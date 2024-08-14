@@ -1,0 +1,46 @@
+[gd_scene load_steps=8 format=3 uid="uid://capnujs73lscd"]
+
+[ext_resource type="Texture2D" uid="uid://c5rn7nreyrsd" path="res://dodge_the_creeps_2d_assets/art/696.jpg" id="1_oycpu"]
+[ext_resource type="Script" path="res://mosca.gd" id="1_sbkj3"]
+[ext_resource type="Texture2D" uid="uid://r2skougpag6" path="res://dodge_the_creeps_2d_assets/art/volar.png" id="2_p2dhw"]
+[ext_resource type="Script" path="res://Araña.gd" id="3_skmrp"]
+[ext_resource type="Texture2D" uid="uid://wu4mkx3pdf82" path="res://dodge_the_creeps_2d_assets/art/tarantula.png" id="4_jp050"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fmu7h"]
+radius = 30.1496
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_snol2"]
+radius = 49.6588
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Fondo" type="Sprite2D" parent="."]
+position = Vector2(240.3, 358.96)
+rotation = -1.5708
+scale = Vector2(1.17048, 1.18088)
+texture = ExtResource("1_oycpu")
+
+[node name="Mosca" type="CharacterBody2D" parent="."]
+script = ExtResource("1_sbkj3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mosca"]
+position = Vector2(267, 318)
+shape = SubResource("CircleShape2D_fmu7h")
+
+[node name="Sprite2D" type="Sprite2D" parent="Mosca"]
+position = Vector2(270, 324)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_p2dhw")
+
+[node name="Araña" type="CharacterBody2D" parent="."]
+position = Vector2(9, 66)
+script = ExtResource("3_skmrp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Araña"]
+position = Vector2(171, 469)
+shape = SubResource("CircleShape2D_snol2")
+
+[node name="Sprite2D" type="Sprite2D" parent="Araña"]
+position = Vector2(167, 466)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("4_jp050")
