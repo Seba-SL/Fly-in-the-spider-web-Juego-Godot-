@@ -5,6 +5,16 @@
 </p>
 
  Videojuego simple de prueba utilizando el motor Godot de desarrollo de videojuegos de código abierto y gratuito ( https://godotengine.org/ ).
+ 
+ El editor de Godot proporciona herramientas para la creación de escenas, edición de scripts, diseño de UI, animaciones y más.
+ 
+ Los scripts se pueden programar en varios lenguajes como: 
+   GDScript: Lenguaje principal de Godot, fácil de usar y bien integrado.
+   C#: Lenguaje popular, bueno para quienes tienen experiencia con .NET.
+   VisualScript: Ideal para quienes prefieren un enfoque visual en la programación.
+   C++ (GDNative): Para extensiones de alto rendimiento y personalización avanzada.
+
+En este caso se decidio GDScript.
 
 
-[Grabación de pantalla primeros modelos ](https://github.com/user-attachments/assets/1719485c-1b15-4a38-bd3c-e42635c68205)
+[Grabación de pantalla primeros modelos](https://github.com/user-attachments/assets/1719485c-1b15-4a38-bd3c-e42635c68205)
