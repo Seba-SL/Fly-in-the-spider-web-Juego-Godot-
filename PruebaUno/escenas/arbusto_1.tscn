@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqgjch5jxkjb0"]
+
+[ext_resource type="Texture2D" uid="uid://d260rn8x3t0v7" path="res://recursos/art/Escenario/arbusto1.png" id="1_g3skn"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_r1msk"]
+radius = 22.0227
+
+[node name="Arbusto1" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("CircleShape2D_r1msk")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_g3skn")

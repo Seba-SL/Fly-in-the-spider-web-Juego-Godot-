@@ -1,0 +1,34 @@
+[gd_scene load_steps=8 format=3 uid="uid://doi5y5p3v13ld"]
+
+[ext_resource type="Texture2D" uid="uid://dl5adom4e7fi6" path="res://recursos/art/Escenario/696.jpg" id="1_0orfl"]
+[ext_resource type="PackedScene" uid="uid://co6leie14213s" path="res://escenas/araña.tscn" id="2_bys4i"]
+[ext_resource type="PackedScene" uid="uid://c46wsdj422tan" path="res://escenas/mosca.tscn" id="3_t7gfn"]
+[ext_resource type="PackedScene" uid="uid://bl4r7fgvm7obd" path="res://escenas/roca.tscn" id="4_72bm7"]
+[ext_resource type="PackedScene" uid="uid://dqgjch5jxkjb0" path="res://escenas/arbusto_1.tscn" id="5_vo5q5"]
+[ext_resource type="PackedScene" uid="uid://dwjm0m7006dp4" path="res://escenas/hierba.tscn" id="6_ndqne"]
+[ext_resource type="PackedScene" uid="uid://ca3ew7rbsudrb" path="res://escenas/hoja.tscn" id="7_nfh66"]
+
+[node name="Escenario" type="Node2D"]
+
+[node name="suelo" type="Sprite2D" parent="."]
+position = Vector2(606, 598)
+rotation = 3.14159
+texture = ExtResource("1_0orfl")
+
+[node name="araña" parent="." instance=ExtResource("2_bys4i")]
+position = Vector2(23, 179)
+
+[node name="Mosca" parent="." instance=ExtResource("3_t7gfn")]
+position = Vector2(448, 323)
+
+[node name="Roca" parent="." instance=ExtResource("4_72bm7")]
+position = Vector2(561, 650)
+
+[node name="Arbusto1" parent="." instance=ExtResource("5_vo5q5")]
+position = Vector2(998, 1107)
+
+[node name="Arbusto2" parent="." instance=ExtResource("6_ndqne")]
+position = Vector2(157, 181)
+
+[node name="hoja" parent="." instance=ExtResource("7_nfh66")]
+position = Vector2(168, 1012)

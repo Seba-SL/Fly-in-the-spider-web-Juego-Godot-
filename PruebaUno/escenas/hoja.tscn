@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://ca3ew7rbsudrb"]
+
+[ext_resource type="Texture2D" uid="uid://bcvdqmhc3jabf" path="res://recursos/art/Escenario/hoja.png" id="1_thau7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tpcmo"]
+
+[node name="hoja" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+show_behind_parent = true
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_thau7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+show_behind_parent = true
+shape = SubResource("CircleShape2D_tpcmo")
+disabled = true
