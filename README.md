@@ -30,3 +30,7 @@ En este caso se decidio GDScript.
 
 
 [Grabación de pantalla primeros modelos](https://github.com/user-attachments/assets/1719485c-1b15-4a38-bd3c-e42635c68205)
+
+
+![imagen](https://github.com/user-attachments/assets/5c197f06-4314-4b78-804f-f8b5b1a7012e)
+
