@@ -9,10 +9,22 @@
  El editor de Godot proporciona herramientas para la creación de escenas, edición de scripts, diseño de UI, animaciones y más.
  
  Los scripts se pueden programar en varios lenguajes como: 
-   GDScript: Lenguaje principal de Godot, fácil de usar y bien integrado.
-   C#: Lenguaje popular, bueno para quienes tienen experiencia con .NET.
-   VisualScript: Ideal para quienes prefieren un enfoque visual en la programación.
-   C++ (GDNative): Para extensiones de alto rendimiento y personalización avanzada.
+ 
+ <ol>
+  <li>
+    <strong>GDScript:</strong> Lenguaje principal de Godot, fácil de usar y bien integrado.
+  </li>
+  <li>
+    <strong>C#:</strong> Lenguaje popular, bueno para quienes tienen experiencia con .NET.
+  </li>
+  <li>
+    <strong>VisualScript:</strong> Ideal para quienes prefieren un enfoque visual en la programación.
+  </li>
+  <li>
+    <strong>C++ (GDNative):</strong> Para extensiones de alto rendimiento y personalización avanzada.
+  </li>
+</ol>
+
 
 En este caso se decidio GDScript.
 
