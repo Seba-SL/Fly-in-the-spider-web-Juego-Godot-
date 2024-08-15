@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://6r25qvtrqyj4"]
+[gd_scene load_steps=6 format=3 uid="uid://6r25qvtrqyj4"]
 
 [ext_resource type="Script" path="res://escenas/menu_inicio.gd" id="1_eprkv"]
 [ext_resource type="Texture2D" uid="uid://b5spno13uw4j6" path="res://recursos/art/Menu/menu.jpeg" id="1_vm0qb"]
 [ext_resource type="Texture2D" uid="uid://dhrqff6m12iba" path="res://recursos/art/Menu/play.png" id="3_bqpoa"]
 [ext_resource type="Texture2D" uid="uid://c4x8ubwds6x8x" path="res://recursos/art/Menu/quit.png" id="4_t0e4s"]
+[ext_resource type="Texture2D" uid="uid://c46pj02tk2j00" path="res://recursos/art/Araña/telarana(1).png" id="5_l80km"]
 
 [node name="Menu Inicio" type="Control"]
 layout_mode = 3
@@ -54,6 +55,11 @@ offset_bottom = 1053.0
 scale = Vector2(0.157748, 0.153819)
 icon = ExtResource("4_t0e4s")
 flat = true
+
+[node name="Telarana(1)" type="Sprite2D" parent="."]
+position = Vector2(967, 30)
+scale = Vector2(0.119141, 0.0888672)
+texture = ExtResource("5_l80km")
 
 [connection signal="pressed" from="Play" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]

@@ -10,10 +10,11 @@ config_version=5
 
 [application]
 
-config/name="Prueba Uno"
+config/name="Fly in the spider Web"
+config/version="0.0ss"
 run/main_scene="res://escenas/menu_inicio.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="res://recursos/art/Araña/telarana(1).png"
 
 [dotnet]
 
