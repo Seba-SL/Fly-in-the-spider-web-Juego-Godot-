@@ -34,3 +34,4 @@ En este caso se decidio GDScript.
 
 ![imagen](https://github.com/user-attachments/assets/5c197f06-4314-4b78-804f-f8b5b1a7012e)
 
+[Grabación de pantalla desde 2024-08-14 23-13-04.webm](https://github.com/user-attachments/assets/dc6dc97a-7225-4eb8-bf14-14cd1aa14171)
