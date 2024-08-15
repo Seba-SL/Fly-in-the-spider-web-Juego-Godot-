@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Prueba Uno"
-run/main_scene="res://escenas/escenario.tscn"
+run/main_scene="res://escenas/menu_inicio.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 

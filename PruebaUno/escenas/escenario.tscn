@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://doi5y5p3v13ld"]
+[gd_scene load_steps=16 format=3 uid="uid://doi5y5p3v13ld"]
 
 [ext_resource type="Texture2D" uid="uid://dl5adom4e7fi6" path="res://recursos/art/Escenario/696.jpg" id="1_0orfl"]
 [ext_resource type="PackedScene" uid="uid://co6leie14213s" path="res://escenas/araña.tscn" id="2_bys4i"]
@@ -8,6 +8,30 @@
 [ext_resource type="PackedScene" uid="uid://dwjm0m7006dp4" path="res://escenas/hierba.tscn" id="6_ndqne"]
 [ext_resource type="PackedScene" uid="uid://ca3ew7rbsudrb" path="res://escenas/hoja.tscn" id="7_nfh66"]
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6m42a"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_m80v7"]
+a = Vector2(0.018829, 1.29236)
+b = Vector2(0.0276743, 2.39126)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_upe0h"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_yi8h2"]
+a = Vector2(597.002, -603.998)
+b = Vector2(600.998, 623.002)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_l2ndd"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_4lhic"]
+a = Vector2(671.001, -481.998)
+b = Vector2(-633.999, -482.002)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xm2k0"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_jsri1"]
+a = Vector2(-543.999, -536.001)
+b = Vector2(-520.002, 610.999)
+
 [node name="Escenario" type="Node2D"]
 
 [node name="suelo" type="Sprite2D" parent="."]
@@ -15,13 +39,39 @@ position = Vector2(600, 600)
 rotation = 3.14159
 texture = ExtResource("1_0orfl")
 
+[node name="Area2D" type="Area2D" parent="suelo"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="suelo/Area2D"]
+material = SubResource("ShaderMaterial_6m42a")
+position = Vector2(-12.7214, -20.9532)
+scale = Vector2(-525.458, 436.183)
+shape = SubResource("SegmentShape2D_m80v7")
+one_way_collision_margin = 0.0
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="suelo/Area2D"]
+material = SubResource("ShaderMaterial_upe0h")
+shape = SubResource("SegmentShape2D_yi8h2")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="suelo/Area2D"]
+material = SubResource("ShaderMaterial_l2ndd")
+shape = SubResource("SegmentShape2D_4lhic")
+one_way_collision_margin = 0.0
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="suelo/Area2D"]
+material = SubResource("ShaderMaterial_xm2k0")
+shape = SubResource("SegmentShape2D_jsri1")
+
 [node name="araña" parent="." instance=ExtResource("2_bys4i")]
+z_as_relative = false
 position = Vector2(23, 179)
 
 [node name="Mosca" parent="." instance=ExtResource("3_t7gfn")]
+clip_children = 1
+z_as_relative = false
 position = Vector2(448, 323)
 
 [node name="Roca" parent="." instance=ExtResource("4_72bm7")]
+z_as_relative = false
 position = Vector2(565, 448)
 
 [node name="Arbusto1" parent="." instance=ExtResource("5_vo5q5")]
