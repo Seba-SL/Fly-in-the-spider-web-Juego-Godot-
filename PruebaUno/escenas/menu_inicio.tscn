@@ -1,9 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://6r25qvtrqyj4"]
+[gd_scene load_steps=4 format=3 uid="uid://6r25qvtrqyj4"]
 
 [ext_resource type="Script" path="res://escenas/menu_inicio.gd" id="1_eprkv"]
 [ext_resource type="Texture2D" uid="uid://b5spno13uw4j6" path="res://recursos/art/Menu/menu.jpeg" id="1_vm0qb"]
-[ext_resource type="Texture2D" uid="uid://dhrqff6m12iba" path="res://recursos/art/Menu/play.png" id="3_bqpoa"]
-[ext_resource type="Texture2D" uid="uid://c4x8ubwds6x8x" path="res://recursos/art/Menu/quit.png" id="4_t0e4s"]
 [ext_resource type="Texture2D" uid="uid://c46pj02tk2j00" path="res://recursos/art/Araña/telarana(1).png" id="5_l80km"]
 
 [node name="Menu Inicio" type="Control"]
@@ -11,55 +9,39 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 3.0
+offset_left = -51.0
 offset_top = -3.0
-offset_right = 3.0
-offset_bottom = -3.0
+offset_right = 93.0
+offset_bottom = 276.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_eprkv")
 
-[node name="TextureRect" type="TextureRect" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.236
-anchor_top = 0.5
-anchor_right = 0.236
-anchor_bottom = 0.5
-offset_left = -102.872
-offset_top = -324.0
-offset_right = 730.128
-offset_bottom = 317.0
+[node name="Menu" type="Sprite2D" parent="."]
+position = Vector2(592, 628)
 texture = ExtResource("1_vm0qb")
-expand_mode = 3
-
-[node name="Play" type="Button" parent="."]
-layout_mode = 0
-offset_left = 565.0
-offset_top = 623.0
-offset_right = 1085.0
-offset_bottom = 1143.0
-scale = Vector2(0.205957, -0.184504)
-focus_neighbor_top = NodePath(".")
-icon = ExtResource("3_bqpoa")
-flat = true
-text_overrun_behavior = 4
-icon_alignment = 1
-
-[node name="quit" type="Button" parent="."]
-layout_mode = 0
-offset_left = 492.0
-offset_top = 536.0
-offset_right = 1012.0
-offset_bottom = 1053.0
-scale = Vector2(0.157748, 0.153819)
-icon = ExtResource("4_t0e4s")
-flat = true
 
 [node name="Telarana(1)" type="Sprite2D" parent="."]
-position = Vector2(967, 30)
+position = Vector2(1149, 37)
 scale = Vector2(0.119141, 0.0888672)
 texture = ExtResource("5_l80km")
 
-[connection signal="pressed" from="Play" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]
+[node name="Play" type="Button" parent="."]
+layout_mode = 0
+offset_left = 591.0
+offset_top = 362.0
+offset_right = 632.0
+offset_bottom = 393.0
+text = "Play"
+
+[node name="Quit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 492.0
+offset_top = 362.0
+offset_right = 534.0
+offset_bottom = 393.0
+text = "Quit
+"
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
