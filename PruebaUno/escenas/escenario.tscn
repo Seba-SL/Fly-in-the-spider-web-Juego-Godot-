@@ -1,12 +1,14 @@
-[gd_scene load_steps=16 format=3 uid="uid://doi5y5p3v13ld"]
+[gd_scene load_steps=18 format=3 uid="uid://doi5y5p3v13ld"]
 
 [ext_resource type="Texture2D" uid="uid://dl5adom4e7fi6" path="res://recursos/art/Escenario/696.jpg" id="1_0orfl"]
+[ext_resource type="Script" path="res://escenas/escenario.gd" id="1_umvp1"]
 [ext_resource type="PackedScene" uid="uid://co6leie14213s" path="res://escenas/araña.tscn" id="2_bys4i"]
 [ext_resource type="PackedScene" uid="uid://c46wsdj422tan" path="res://escenas/mosca.tscn" id="3_t7gfn"]
 [ext_resource type="PackedScene" uid="uid://bl4r7fgvm7obd" path="res://escenas/roca.tscn" id="4_72bm7"]
 [ext_resource type="PackedScene" uid="uid://dqgjch5jxkjb0" path="res://escenas/arbusto_1.tscn" id="5_vo5q5"]
 [ext_resource type="PackedScene" uid="uid://dwjm0m7006dp4" path="res://escenas/hierba.tscn" id="6_ndqne"]
 [ext_resource type="PackedScene" uid="uid://ca3ew7rbsudrb" path="res://escenas/hoja.tscn" id="7_nfh66"]
+[ext_resource type="Texture2D" uid="uid://c4x8ubwds6x8x" path="res://recursos/art/Menu/quit.png" id="8_c2pye"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_6m42a"]
 
@@ -33,6 +35,7 @@ a = Vector2(-543.999, -536.001)
 b = Vector2(-520.002, 610.999)
 
 [node name="Escenario" type="Node2D"]
+script = ExtResource("1_umvp1")
 
 [node name="suelo" type="Sprite2D" parent="."]
 position = Vector2(600, 600)
@@ -82,3 +85,14 @@ position = Vector2(157, 181)
 
 [node name="hoja" parent="." instance=ExtResource("7_nfh66")]
 position = Vector2(814, 918)
+
+[node name="volverAlMenu" type="Button" parent="."]
+offset_left = 768.0
+offset_top = 72.0
+offset_right = 1288.0
+offset_bottom = 589.0
+scale = Vector2(0.077137, 0.0697)
+icon = ExtResource("8_c2pye")
+flat = true
+
+[connection signal="pressed" from="volverAlMenu" to="." method="_on_volver_al_menu_pressed"]

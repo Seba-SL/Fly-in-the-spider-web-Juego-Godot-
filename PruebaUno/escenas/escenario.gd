@@ -1,4 +1,4 @@
-extends Control
+extends Node2D
 
 
 # Called when the node enters the scene tree for the first time.
@@ -11,11 +11,6 @@ func _process(delta):
 	pass
 
 
-func _on_button_pressed():
-	get_tree().change_scene_to_file("res://escenas/escenario.tscn")
-	pass # Replace with function body.
-
-
-func _on_quit_pressed():
-	get_tree().quit()
+func _on_volver_al_menu_pressed():
+	get_tree().change_scene_to_file("res://escenas/menu_inicio.tscn")
 	pass # Replace with function body.
