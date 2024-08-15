@@ -87,11 +87,11 @@ position = Vector2(157, 181)
 position = Vector2(814, 918)
 
 [node name="volverAlMenu" type="Button" parent="."]
-offset_left = 768.0
-offset_top = 72.0
-offset_right = 1288.0
-offset_bottom = 589.0
-scale = Vector2(0.077137, 0.0697)
+offset_left = 792.0
+offset_top = 952.0
+offset_right = 1899.0
+offset_bottom = 1736.0
+scale = Vector2(0.0378805, 0.0323112)
 icon = ExtResource("8_c2pye")
 flat = true
 
