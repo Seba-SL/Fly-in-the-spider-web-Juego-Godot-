@@ -17,6 +17,7 @@ expand_margin_left = 5.0
 expand_margin_top = 10.0
 expand_margin_right = 10.0
 expand_margin_bottom = 5.0
+shadow_color = Color(0.109804, 0.109804, 0.109804, 1)
 shadow_size = 25
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_quuos"]
@@ -29,6 +30,7 @@ expand_margin_left = 10.0
 expand_margin_top = 10.0
 expand_margin_right = 5.0
 expand_margin_bottom = 5.0
+shadow_color = Color(0.109804, 0.109804, 0.109804, 1)
 shadow_size = 25
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fbulh"]
@@ -39,7 +41,8 @@ corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 expand_margin_left = 5.0
 expand_margin_right = 5.0
-shadow_size = 200
+shadow_color = Color(0.109804, 0.109804, 0.109804, 1)
+shadow_size = 100
 anti_aliasing_size = 2.0
 
 [node name="Menu Inicio" type="Control"]
