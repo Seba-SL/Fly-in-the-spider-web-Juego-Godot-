@@ -1,18 +1,35 @@
-[gd_scene load_steps=6 format=3 uid="uid://co6leie14213s"]
+[gd_scene load_steps=30 format=3 uid="uid://co6leie14213s"]
 
 [ext_resource type="Script" path="res://scripts/Araña.gd" id="1_flwim"]
 [ext_resource type="Texture2D" uid="uid://d2fehljokil0" path="res://recursos/art/Araña/tarantula.png" id="2_nx13q"]
-[ext_resource type="Texture2D" uid="uid://d3ymj0hyfyt0r" path="res://recursos/art/Araña/tarantula_move.png" id="3_wmxtx"]
+[ext_resource type="Texture2D" uid="uid://6huc6jmcwduj" path="res://recursos/art/Mosca/vidabarra/VIDA_0 - Cópia.png" id="3_3urrb"]
+[ext_resource type="Texture2D" uid="uid://ccvejq4dkyg2h" path="res://recursos/art/Mosca/vidabarra/VIDA_0.png" id="4_kq8pn"]
+[ext_resource type="Texture2D" uid="uid://bt3d0flpcvrun" path="res://recursos/art/Mosca/vidabarra/VIDA_1 - Cópia.png" id="5_jgtnk"]
+[ext_resource type="Texture2D" uid="uid://72mysuldjpy1" path="res://recursos/art/Mosca/vidabarra/VIDA_1.png" id="6_wdbx0"]
+[ext_resource type="Texture2D" uid="uid://27g6unnhbx8j" path="res://recursos/art/Mosca/vidabarra/VIDA_2 - Cópia.png" id="7_lwdeu"]
+[ext_resource type="Texture2D" uid="uid://b1by0te6qxms4" path="res://recursos/art/Mosca/vidabarra/VIDA_2.png" id="8_op4yg"]
+[ext_resource type="Texture2D" uid="uid://din1uvrimcyfs" path="res://recursos/art/Mosca/vidabarra/VIDA_3 - Cópia.png" id="9_iwn6b"]
+[ext_resource type="Texture2D" uid="uid://71pnw0xoqe6l" path="res://recursos/art/Mosca/vidabarra/VIDA_3.png" id="10_iee8y"]
+[ext_resource type="Texture2D" uid="uid://b40ytb77b16s2" path="res://recursos/art/Mosca/vidabarra/VIDA_4 - Cópia.png" id="11_il0pt"]
+[ext_resource type="Texture2D" uid="uid://btw6iotaak0lp" path="res://recursos/art/Mosca/vidabarra/VIDA_4.png" id="12_bu5s0"]
+[ext_resource type="Texture2D" uid="uid://buabhgsygn1e1" path="res://recursos/art/Mosca/vidabarra/VIDA_5 - Cópia.png" id="13_rpkqc"]
+[ext_resource type="Texture2D" uid="uid://0lah2qnjugcu" path="res://recursos/art/Mosca/vidabarra/VIDA_5.png" id="14_2g4ms"]
+[ext_resource type="Texture2D" uid="uid://bqb3inqdk8bqo" path="res://recursos/art/Mosca/vidabarra/VIDA_6 - Cópia.png" id="15_6rwef"]
+[ext_resource type="Texture2D" uid="uid://bhn0exey3jsg6" path="res://recursos/art/Mosca/vidabarra/VIDA_6.png" id="16_rf3qy"]
+[ext_resource type="Texture2D" uid="uid://wnsk0dm2akqm" path="res://recursos/art/Mosca/vidabarra/VIDA_7 - Cópia.png" id="17_kb1iy"]
+[ext_resource type="Texture2D" uid="uid://dh3aqwa7fflwu" path="res://recursos/art/Mosca/vidabarra/VIDA_7.png" id="18_ntmd4"]
+[ext_resource type="Texture2D" uid="uid://b3sisveus5tn6" path="res://recursos/art/Mosca/vidabarra/VIDA_8 - Cópia.png" id="19_v1y1h"]
+[ext_resource type="Texture2D" uid="uid://dc8du0yn68cyc" path="res://recursos/art/Mosca/vidabarra/VIDA_8.png" id="20_d2mvf"]
+[ext_resource type="Texture2D" uid="uid://d3lbmkj50joqj" path="res://recursos/art/Mosca/vidabarra/VIDA_9 - Cópia.png" id="21_6g710"]
+[ext_resource type="Texture2D" uid="uid://bmil61e42tbvx" path="res://recursos/art/Mosca/vidabarra/VIDA_9.png" id="22_kfh8j"]
+[ext_resource type="Texture2D" uid="uid://dvgrqpk36ksg2" path="res://recursos/art/Mosca/vidabarra/VIDA_10 - Cópia.png" id="23_7t414"]
+[ext_resource type="Texture2D" uid="uid://bmypec82284hi" path="res://recursos/art/Mosca/vidabarra/VIDA_10.png" id="24_8cq60"]
+[ext_resource type="Texture2D" uid="uid://dsbpvv5gd65vo" path="res://recursos/art/Mosca/vidabarra/VIDA_HIT.png" id="25_0rm6t"]
+[ext_resource type="Texture2D" uid="uid://bcts2xmoqi6va" path="res://recursos/art/Mosca/vidabarra/VIDA_HIT_old.png" id="26_d5hru"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_kkh61"]
 animations = [{
 "frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_nx13q")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_wmxtx")
-}, {
 "duration": 1.0,
 "texture": ExtResource("2_nx13q")
 }],
@@ -23,6 +40,86 @@ animations = [{
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_b3351"]
 radius = 46.1873
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_72stt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_3urrb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_kq8pn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_jgtnk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_wdbx0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_lwdeu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_op4yg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_iwn6b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_iee8y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_il0pt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_bu5s0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_rpkqc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_2g4ms")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_6rwef")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_rf3qy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_kb1iy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_ntmd4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_v1y1h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_d2mvf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_6g710")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_kfh8j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_7t414")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_8cq60")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_0rm6t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_d5hru")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
 
 [node name="araña" type="Node2D"]
 
@@ -51,3 +148,27 @@ limit_top = 0
 limit_right = 1100
 limit_bottom = 1000
 position_smoothing_enabled = true
+
+[node name="GUI" type="CanvasLayer" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="GUI"]
+position = Vector2(117, 30)
+scale = Vector2(0.497355, 0.421053)
+sprite_frames = SubResource("SpriteFrames_72stt")
+speed_scale = 2.0
+
+[node name="ProgressBar" type="ProgressBar" parent="GUI"]
+anchors_preset = -1
+anchor_right = 0.0234375
+offset_left = 180.0
+offset_top = 37.0
+offset_right = 184.0
+offset_bottom = 64.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="GUI"]
+offset_left = 33.0
+offset_top = 37.0
+offset_right = 164.0
+offset_bottom = 60.0
+text = "Tarantula Health"

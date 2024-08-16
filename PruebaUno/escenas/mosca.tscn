@@ -1,7 +1,31 @@
-[gd_scene load_steps=5 format=3 uid="uid://c46wsdj422tan"]
+[gd_scene load_steps=30 format=3 uid="uid://c46wsdj422tan"]
 
 [ext_resource type="Texture2D" uid="uid://dsn6x54jtqknv" path="res://recursos/art/Mosca/volar.png" id="1_ekk8c"]
 [ext_resource type="Script" path="res://scripts/mosca.gd" id="1_sukv1"]
+[ext_resource type="Texture2D" uid="uid://6huc6jmcwduj" path="res://recursos/art/Mosca/vidabarra/VIDA_0 - Cópia.png" id="3_d74ol"]
+[ext_resource type="Texture2D" uid="uid://ccvejq4dkyg2h" path="res://recursos/art/Mosca/vidabarra/VIDA_0.png" id="4_ugi53"]
+[ext_resource type="Texture2D" uid="uid://bt3d0flpcvrun" path="res://recursos/art/Mosca/vidabarra/VIDA_1 - Cópia.png" id="5_gn1ho"]
+[ext_resource type="Texture2D" uid="uid://72mysuldjpy1" path="res://recursos/art/Mosca/vidabarra/VIDA_1.png" id="6_5fttu"]
+[ext_resource type="Texture2D" uid="uid://27g6unnhbx8j" path="res://recursos/art/Mosca/vidabarra/VIDA_2 - Cópia.png" id="7_68gi8"]
+[ext_resource type="Texture2D" uid="uid://b1by0te6qxms4" path="res://recursos/art/Mosca/vidabarra/VIDA_2.png" id="8_fbj0a"]
+[ext_resource type="Texture2D" uid="uid://din1uvrimcyfs" path="res://recursos/art/Mosca/vidabarra/VIDA_3 - Cópia.png" id="9_1721n"]
+[ext_resource type="Texture2D" uid="uid://71pnw0xoqe6l" path="res://recursos/art/Mosca/vidabarra/VIDA_3.png" id="10_yisro"]
+[ext_resource type="Texture2D" uid="uid://b40ytb77b16s2" path="res://recursos/art/Mosca/vidabarra/VIDA_4 - Cópia.png" id="11_i4l4c"]
+[ext_resource type="Texture2D" uid="uid://btw6iotaak0lp" path="res://recursos/art/Mosca/vidabarra/VIDA_4.png" id="12_cqok5"]
+[ext_resource type="Texture2D" uid="uid://buabhgsygn1e1" path="res://recursos/art/Mosca/vidabarra/VIDA_5 - Cópia.png" id="13_0nubb"]
+[ext_resource type="Texture2D" uid="uid://0lah2qnjugcu" path="res://recursos/art/Mosca/vidabarra/VIDA_5.png" id="14_yquxe"]
+[ext_resource type="Texture2D" uid="uid://bqb3inqdk8bqo" path="res://recursos/art/Mosca/vidabarra/VIDA_6 - Cópia.png" id="15_l6lqw"]
+[ext_resource type="Texture2D" uid="uid://bhn0exey3jsg6" path="res://recursos/art/Mosca/vidabarra/VIDA_6.png" id="16_nuhyv"]
+[ext_resource type="Texture2D" uid="uid://wnsk0dm2akqm" path="res://recursos/art/Mosca/vidabarra/VIDA_7 - Cópia.png" id="17_ytg10"]
+[ext_resource type="Texture2D" uid="uid://dh3aqwa7fflwu" path="res://recursos/art/Mosca/vidabarra/VIDA_7.png" id="18_h8g4n"]
+[ext_resource type="Texture2D" uid="uid://b3sisveus5tn6" path="res://recursos/art/Mosca/vidabarra/VIDA_8 - Cópia.png" id="19_e326j"]
+[ext_resource type="Texture2D" uid="uid://dc8du0yn68cyc" path="res://recursos/art/Mosca/vidabarra/VIDA_8.png" id="20_ur1si"]
+[ext_resource type="Texture2D" uid="uid://d3lbmkj50joqj" path="res://recursos/art/Mosca/vidabarra/VIDA_9 - Cópia.png" id="21_orgcb"]
+[ext_resource type="Texture2D" uid="uid://bmil61e42tbvx" path="res://recursos/art/Mosca/vidabarra/VIDA_9.png" id="22_c5pvj"]
+[ext_resource type="Texture2D" uid="uid://dvgrqpk36ksg2" path="res://recursos/art/Mosca/vidabarra/VIDA_10 - Cópia.png" id="23_oahb1"]
+[ext_resource type="Texture2D" uid="uid://bmypec82284hi" path="res://recursos/art/Mosca/vidabarra/VIDA_10.png" id="24_ebo18"]
+[ext_resource type="Texture2D" uid="uid://dsbpvv5gd65vo" path="res://recursos/art/Mosca/vidabarra/VIDA_HIT.png" id="25_cxw8k"]
+[ext_resource type="Texture2D" uid="uid://bcts2xmoqi6va" path="res://recursos/art/Mosca/vidabarra/VIDA_HIT_old.png" id="26_f7upb"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dmj66"]
 animations = [{
@@ -14,10 +38,91 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_qr0qc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_d74ol")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ugi53")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_gn1ho")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_5fttu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_68gi8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_fbj0a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_1721n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_yisro")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_i4l4c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_cqok5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_0nubb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_yquxe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_l6lqw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_nuhyv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_ytg10")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_h8g4n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_e326j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_ur1si")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_orgcb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_c5pvj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_oahb1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_ebo18")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_cxw8k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_f7upb")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_bhbwr"]
 
 [node name="Mosca" type="Node2D"]
 top_level = true
+position = Vector2(504, 333)
 
 [node name="mosca" type="CharacterBody2D" parent="."]
 script = ExtResource("1_sukv1")
@@ -25,6 +130,31 @@ script = ExtResource("1_sukv1")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="mosca"]
 scale = Vector2(0.1, 0.1)
 sprite_frames = SubResource("SpriteFrames_dmj66")
+
+[node name="GUI" type="CanvasLayer" parent="mosca"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="mosca/GUI"]
+position = Vector2(1038, 30)
+scale = Vector2(0.497355, 0.421053)
+sprite_frames = SubResource("SpriteFrames_qr0qc")
+frame_progress = 0.710464
+speed_scale = 2.0
+
+[node name="ProgressBar" type="ProgressBar" parent="mosca/GUI"]
+anchors_preset = -1
+anchor_right = 0.0260417
+offset_left = 1097.0
+offset_top = 36.0
+offset_right = 1101.0
+offset_bottom = 63.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="mosca/GUI"]
+offset_left = 958.0
+offset_top = 38.0
+offset_right = 1036.0
+offset_bottom = 61.0
+text = "Fly Health"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="mosca"]
 scale = Vector2(1.0091, 1.98622)
