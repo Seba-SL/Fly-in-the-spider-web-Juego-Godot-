@@ -12,7 +12,7 @@ func _ready():
 	pass
 	
 func _process(_delta):
-	$"GUI/vida_araña".value -= 1
+	$"GUI/vida_araña".value -= 0.1
 		
 	if $"GUI/vida_araña".value == 0 :
 		get_tree().change_scene_to_file("res://escenas/menu_inicio.tscn")

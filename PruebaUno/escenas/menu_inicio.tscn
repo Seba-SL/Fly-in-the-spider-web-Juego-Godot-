@@ -1,9 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://6r25qvtrqyj4"]
+[gd_scene load_steps=9 format=3 uid="uid://6r25qvtrqyj4"]
 
 [ext_resource type="Script" path="res://scripts/menu_inicio.gd" id="1_eprkv"]
 [ext_resource type="Texture2D" uid="uid://b5spno13uw4j6" path="res://recursos/art/Menu/menu.jpeg" id="1_vm0qb"]
 [ext_resource type="FontFile" uid="uid://dtyyx0ejtk2dv" path="res://recursos/fonts/Xolonium-Regular.ttf" id="4_0urwb"]
 [ext_resource type="Texture2D" uid="uid://c46pj02tk2j00" path="res://recursos/art/Araña/telarana(1).png" id="5_l80km"]
+
+[sub_resource type="Theme" id="Theme_o1fst"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fly3l"]
 bg_color = Color(0.111197, 0.111197, 0.111197, 1)
@@ -15,6 +17,7 @@ expand_margin_left = 5.0
 expand_margin_top = 10.0
 expand_margin_right = 10.0
 expand_margin_bottom = 5.0
+shadow_size = 25
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_quuos"]
 bg_color = Color(0.109804, 0.109804, 0.109804, 1)
@@ -26,6 +29,7 @@ expand_margin_left = 10.0
 expand_margin_top = 10.0
 expand_margin_right = 5.0
 expand_margin_bottom = 5.0
+shadow_size = 25
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fbulh"]
 bg_color = Color(0.109804, 0.109804, 0.109804, 1)
@@ -35,6 +39,8 @@ corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 expand_margin_left = 5.0
 expand_margin_right = 5.0
+shadow_size = 200
+anti_aliasing_size = 2.0
 
 [node name="Menu Inicio" type="Control"]
 layout_mode = 3
@@ -47,6 +53,7 @@ offset_right = 90.0
 offset_bottom = 276.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = SubResource("Theme_o1fst")
 script = ExtResource("1_eprkv")
 
 [node name="Menu" type="Sprite2D" parent="."]
@@ -61,10 +68,10 @@ texture = ExtResource("5_l80km")
 
 [node name="Play" type="Button" parent="."]
 layout_mode = 0
-offset_left = 184.0
-offset_top = 32.0
-offset_right = 256.0
-offset_bottom = 71.0
+offset_left = 92.0
+offset_top = 34.0
+offset_right = 164.0
+offset_bottom = 73.0
 theme_override_fonts/font = ExtResource("4_0urwb")
 theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxFlat_fly3l")
@@ -72,10 +79,10 @@ text = "Play"
 
 [node name="Quit" type="Button" parent="."]
 layout_mode = 0
-offset_left = 97.0
-offset_top = 32.0
-offset_right = 139.0
-offset_bottom = 63.0
+offset_left = 98.0
+offset_top = 139.0
+offset_right = 166.0
+offset_bottom = 178.0
 theme_override_fonts/font = ExtResource("4_0urwb")
 theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxFlat_quuos")
