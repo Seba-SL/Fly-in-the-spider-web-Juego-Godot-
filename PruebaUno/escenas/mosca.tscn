@@ -41,20 +41,20 @@ top_level = true
 anchors_preset = -1
 anchor_left = -0.131944
 anchor_right = 0.0286458
-offset_left = 1091.0
-offset_top = 10.0
-offset_right = 1095.0
-offset_bottom = 37.0
+offset_left = 949.944
+offset_top = 7.0
+offset_right = 953.944
+offset_bottom = 34.0
 theme_override_styles/fill = SubResource("StyleBoxFlat_uir5r")
 step = 1.0
 value = 100.0
 metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="mosca/GUI"]
-offset_left = 958.0
-offset_top = 38.0
-offset_right = 1036.0
-offset_bottom = 61.0
+offset_left = 828.0
+offset_top = 34.0
+offset_right = 906.0
+offset_bottom = 57.0
 text = "Fly Health"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="mosca"]
