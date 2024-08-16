@@ -1,19 +1,16 @@
 extends CharacterBody2D
 
-@export var bounce_factor: float = 1.0
-@export var salud = 5 
-@onready var barra = $"../GUI/ProgressBar"
-var inmune : bool = false
-# Called when the node enters the scene tree for the first time.
+# Propiedades
+var max_health: int = 100
+var current_health: int = max_health
 
+# Referencia a la barra de vida
+@onready var health_bar: ProgressBar = $HealthBar
 func _ready():
-	barra.max_value = salud
+	update_health_bar()
 	print("¡Hola, Godot!")
 	pass
 	
-func _process(delta):
-	daño_control()
-	pass
 
 func _physics_process(delta):
 	var direccion = Input.get_vector("alt_izq","alt_derecha","alt_arriba","alt_abajo" )
@@ -32,18 +29,19 @@ func _on_volver_al_menu_pressed():
 	pass # Replace with function body.
 
 
-func _on_progress_bar_changed():
-	pass # Replace with function body.
+func take_damage(amount: int):
+	current_health -= amount
+	current_health = clamp(current_health, 0, max_health)
+	update_health_bar()
+	
+	if current_health <= 0:
+		die()
 
+func update_health_bar():
+	if health_bar:
+		health_bar.value = current_health
+		health_bar.max_value = max_health
 
-
-func daño_control():
-	if inmune == true:
-		if salud > 0:
-			salud -= 1
-			barra.value = salud 
-			inmune = false
-		if salud <= 0:
-			get_tree().reload_current_scene()
-	pass
+func die():
+	queue_free() # O cualquier otra lógica para manejar la muerte del personaje
 	
