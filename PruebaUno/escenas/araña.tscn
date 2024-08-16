@@ -17,8 +17,8 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_b3351"]
 radius = 46.1873
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ycdcj"]
-bg_color = Color(0, 0.6, 0, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vp184"]
+bg_color = Color(0, 0.607843, 0.392157, 1)
 corner_radius_top_left = 5
 corner_radius_top_right = 5
 corner_radius_bottom_right = 5
@@ -54,26 +54,6 @@ position_smoothing_enabled = true
 
 [node name="GUI" type="CanvasLayer" parent="."]
 
-[node name="ProgressBar" type="ProgressBar" parent="GUI"]
-anchors_preset = -1
-anchor_left = -0.131076
-anchor_right = 0.0277778
-offset_left = 175.0
-offset_top = 14.0
-offset_right = 179.0
-offset_bottom = 41.0
-theme_override_styles/background = SubResource("StyleBoxFlat_ycdcj")
-step = 1.0
-value = 100.0
-fill_mode = 2
-metadata/_edit_use_anchors_ = true
-
-[node name="TextureRect" type="TextureRect" parent="GUI/ProgressBar"]
-offset_left = -63.0
-offset_top = -7.0
-offset_right = -23.0
-offset_bottom = 33.0
-
 [node name="Label" type="Label" parent="GUI"]
 offset_left = 27.0
 offset_top = 41.0
@@ -81,4 +61,10 @@ offset_right = 158.0
 offset_bottom = 64.0
 text = "Tarantula Health"
 
-[connection signal="changed" from="GUI/ProgressBar" to="Araña" method="_on_progress_bar_changed"]
+[node name="ProgressBar" type="ProgressBar" parent="GUI"]
+offset_left = 18.0
+offset_top = 15.0
+offset_right = 208.0
+offset_bottom = 42.0
+theme_override_styles/fill = SubResource("StyleBoxFlat_vp184")
+step = 1.0
