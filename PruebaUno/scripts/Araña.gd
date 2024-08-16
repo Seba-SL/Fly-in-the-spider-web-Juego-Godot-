@@ -4,15 +4,17 @@ extends CharacterBody2D
 var max_health: int = 100
 var current_health: int = max_health
 
+@onready var health_bar: ProgressBar = $GUI/vida_araña
+
 func _ready():
-	$"../GUI/ProgressBar".value = max_health
+	$"GUI/vida_araña".value = max_health
 	print("¡Hola, Godot!")
 	pass
 	
 func _process(_delta):
-	$"../GUI/ProgressBar".value -= 1
-	
-	if $"../GUI/ProgressBar".value == 0 :
+	$"GUI/vida_araña".value -= 1
+		
+	if $"GUI/vida_araña".value == 0 :
 		get_tree().change_scene_to_file("res://escenas/menu_inicio.tscn")
 	pass
 

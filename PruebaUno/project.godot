@@ -11,10 +11,15 @@ config_version=5
 [application]
 
 config/name="Fly in the spider Web"
-config/version="0.0ss"
+config/version="0.0s"
 run/main_scene="res://escenas/menu_inicio.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://recursos/art/Araña/telarana(1).png"
+
+[display]
+
+window/size/viewport_width=1000
+window/size/viewport_height=1000
 
 [dotnet]
 

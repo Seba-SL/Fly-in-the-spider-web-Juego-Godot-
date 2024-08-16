@@ -18,28 +18,29 @@ grow_vertical = 2
 script = ExtResource("1_eprkv")
 
 [node name="Menu" type="Sprite2D" parent="."]
-position = Vector2(592, 628)
+position = Vector2(576, 453)
+scale = Vector2(0.839063, 0.703125)
 texture = ExtResource("1_vm0qb")
 
 [node name="Telarana(1)" type="Sprite2D" parent="."]
-position = Vector2(1149, 37)
+position = Vector2(955, 57)
 scale = Vector2(0.119141, 0.0888672)
 texture = ExtResource("5_l80km")
 
 [node name="Play" type="Button" parent="."]
 layout_mode = 0
-offset_left = 591.0
-offset_top = 362.0
-offset_right = 632.0
-offset_bottom = 393.0
+offset_left = 164.0
+offset_top = 32.0
+offset_right = 205.0
+offset_bottom = 63.0
 text = "Play"
 
 [node name="Quit" type="Button" parent="."]
 layout_mode = 0
-offset_left = 492.0
-offset_top = 362.0
-offset_right = 534.0
-offset_bottom = 393.0
+offset_left = 97.0
+offset_top = 32.0
+offset_right = 139.0
+offset_bottom = 63.0
 text = "Quit
 "
 

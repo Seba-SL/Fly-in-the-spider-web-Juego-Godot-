@@ -36,7 +36,7 @@ sprite_frames = SubResource("SpriteFrames_dmj66")
 
 [node name="GUI" type="CanvasLayer" parent="mosca"]
 
-[node name="ProgressBar" type="ProgressBar" parent="mosca/GUI"]
+[node name="vida_mosca" type="ProgressBar" parent="mosca/GUI"]
 top_level = true
 anchors_preset = -1
 anchor_left = -0.131944

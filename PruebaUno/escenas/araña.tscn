@@ -14,15 +14,15 @@ animations = [{
 "speed": 1.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_b3351"]
-radius = 46.1873
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vp184"]
 bg_color = Color(0, 0.607843, 0.392157, 1)
 corner_radius_top_left = 5
 corner_radius_top_right = 5
 corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_b3351"]
+radius = 46.1873
 
 [node name="araña" type="Node2D"]
 
@@ -35,6 +35,23 @@ position = Vector2(1, 7.45058e-09)
 scale = Vector2(0.2, 0.2)
 sprite_frames = SubResource("SpriteFrames_kkh61")
 frame_progress = 0.678697
+
+[node name="GUI" type="CanvasLayer" parent="Araña"]
+
+[node name="Label" type="Label" parent="Araña/GUI"]
+offset_left = 27.0
+offset_top = 41.0
+offset_right = 158.0
+offset_bottom = 64.0
+text = "Tarantula Health"
+
+[node name="vida_araña" type="ProgressBar" parent="Araña/GUI"]
+offset_left = 18.0
+offset_top = 15.0
+offset_right = 208.0
+offset_bottom = 42.0
+theme_override_styles/fill = SubResource("StyleBoxFlat_vp184")
+step = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Araña"]
 scale = Vector2(0.39157, -0.668639)
@@ -50,20 +67,3 @@ limit_top = 0
 limit_right = 1100
 limit_bottom = 1000
 position_smoothing_enabled = true
-
-[node name="GUI" type="CanvasLayer" parent="."]
-
-[node name="Label" type="Label" parent="GUI"]
-offset_left = 27.0
-offset_top = 41.0
-offset_right = 158.0
-offset_bottom = 64.0
-text = "Tarantula Health"
-
-[node name="ProgressBar" type="ProgressBar" parent="GUI"]
-offset_left = 18.0
-offset_top = 15.0
-offset_right = 208.0
-offset_bottom = 42.0
-theme_override_styles/fill = SubResource("StyleBoxFlat_vp184")
-step = 1.0
