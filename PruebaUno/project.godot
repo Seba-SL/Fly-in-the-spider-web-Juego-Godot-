@@ -18,8 +18,8 @@ config/icon="res://recursos/art/Araña/telarana(1).png"
 
 [display]
 
-window/size/viewport_width=1000
-window/size/viewport_height=1000
+window/size/viewport_width=890
+window/size/viewport_height=750
 
 [dotnet]
 

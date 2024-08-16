@@ -1,8 +1,40 @@
-[gd_scene load_steps=4 format=3 uid="uid://6r25qvtrqyj4"]
+[gd_scene load_steps=8 format=3 uid="uid://6r25qvtrqyj4"]
 
 [ext_resource type="Script" path="res://scripts/menu_inicio.gd" id="1_eprkv"]
 [ext_resource type="Texture2D" uid="uid://b5spno13uw4j6" path="res://recursos/art/Menu/menu.jpeg" id="1_vm0qb"]
+[ext_resource type="FontFile" uid="uid://dtyyx0ejtk2dv" path="res://recursos/fonts/Xolonium-Regular.ttf" id="4_0urwb"]
 [ext_resource type="Texture2D" uid="uid://c46pj02tk2j00" path="res://recursos/art/Araña/telarana(1).png" id="5_l80km"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fly3l"]
+bg_color = Color(0.111197, 0.111197, 0.111197, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_left = 5.0
+expand_margin_top = 10.0
+expand_margin_right = 10.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_quuos"]
+bg_color = Color(0.109804, 0.109804, 0.109804, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 5
+expand_margin_left = 10.0
+expand_margin_top = 10.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fbulh"]
+bg_color = Color(0.109804, 0.109804, 0.109804, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_left = 5.0
+expand_margin_right = 5.0
 
 [node name="Menu Inicio" type="Control"]
 layout_mode = 3
@@ -18,21 +50,24 @@ grow_vertical = 2
 script = ExtResource("1_eprkv")
 
 [node name="Menu" type="Sprite2D" parent="."]
-position = Vector2(576, 453)
-scale = Vector2(0.839063, 0.703125)
+position = Vector2(496, 377)
+scale = Vector2(0.702344, 0.591406)
 texture = ExtResource("1_vm0qb")
 
 [node name="Telarana(1)" type="Sprite2D" parent="."]
-position = Vector2(955, 57)
+position = Vector2(866, 30)
 scale = Vector2(0.119141, 0.0888672)
 texture = ExtResource("5_l80km")
 
 [node name="Play" type="Button" parent="."]
 layout_mode = 0
-offset_left = 164.0
+offset_left = 184.0
 offset_top = 32.0
-offset_right = 205.0
-offset_bottom = 63.0
+offset_right = 256.0
+offset_bottom = 71.0
+theme_override_fonts/font = ExtResource("4_0urwb")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_fly3l")
 text = "Play"
 
 [node name="Quit" type="Button" parent="."]
@@ -41,8 +76,22 @@ offset_left = 97.0
 offset_top = 32.0
 offset_right = 139.0
 offset_bottom = 63.0
+theme_override_fonts/font = ExtResource("4_0urwb")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_quuos")
 text = "Quit
 "
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 176.0
+offset_top = 628.0
+offset_right = 833.0
+offset_bottom = 701.0
+theme_override_fonts/font = ExtResource("4_0urwb")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_fbulh")
+text = "Fly in the spider web"
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
