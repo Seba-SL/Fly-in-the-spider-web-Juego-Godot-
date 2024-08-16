@@ -9,6 +9,12 @@ func _ready():
 	print("¡Hola, Godot!")
 	pass
 	
+func _process(_delta):
+	$"../GUI/ProgressBar".value -= 1
+	
+	if $"../GUI/ProgressBar".value == 0 :
+		get_tree().change_scene_to_file("res://escenas/menu_inicio.tscn")
+	pass
 
 func _physics_process(delta):
 	var direccion = Input.get_vector("alt_izq","alt_derecha","alt_arriba","alt_abajo" )

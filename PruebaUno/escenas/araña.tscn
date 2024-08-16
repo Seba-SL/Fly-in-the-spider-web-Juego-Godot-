@@ -34,8 +34,7 @@ script = ExtResource("1_flwim")
 position = Vector2(1, 7.45058e-09)
 scale = Vector2(0.2, 0.2)
 sprite_frames = SubResource("SpriteFrames_kkh61")
-frame_progress = 0.716612
-speed_scale = 3.0
+frame_progress = 0.678697
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Araña"]
 scale = Vector2(0.39157, -0.668639)
