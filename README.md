@@ -29,10 +29,6 @@
 En este caso se decidio GDScript.
 [Grabación de pantalla primeros modelos](https://github.com/user-attachments/assets/1719485c-1b15-4a38-bd3c-e42635c68205)
 
-[Grabación de pantalla desde 2024-08-16 16-08-53.webm](https://github.com/user-attachments/assets/ead9fba3-d3cb-473a-9d67-2221b01ab8b9)
-
-
-
 [Grabación de pantalla desde 2024-08-14 23-13-04.webm](https://github.com/user-attachments/assets/dc6dc97a-7225-4eb8-bf14-14cd1aa14171)
 
 [Grabación de pantalla desde 2024-08-16 16-08-53.webm](https://github.com/user-attachments/assets/97dc2ada-04b4-4051-83cc-d36a33a73d25)
