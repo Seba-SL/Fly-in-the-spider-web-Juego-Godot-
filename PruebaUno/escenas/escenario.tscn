@@ -23,11 +23,15 @@ z_as_relative = false
 position = Vector2(440, 544)
 
 [node name="Mosca" parent="." instance=ExtResource("3_t7gfn")]
+physics_interpolation_mode = 1
 clip_children = 1
 z_as_relative = false
 position = Vector2(648, 552)
 
 [node name="Roca" parent="." instance=ExtResource("4_72bm7")]
+process_priority = 1
+process_physics_priority = 1
+physics_interpolation_mode = 1
 z_as_relative = false
 position = Vector2(565, 448)
 

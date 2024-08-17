@@ -33,5 +33,3 @@ func _physics_process(delta):
 func _on_volver_al_menu_pressed():
 	get_tree().change_scene_to_file("res://escenas/menu_inicio.tscn")
 	pass # Replace with function body.
-
-
