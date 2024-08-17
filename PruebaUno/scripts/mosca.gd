@@ -11,9 +11,6 @@ func _ready():
 	print("¡Hola, Godot!")
 	pass
 	
-func _process(_delta):
-	
-	pass
 
 func _physics_process(_delta):
 	var direccion = Input.get_vector("ui_left","ui_right","ui_up","ui_down" )
@@ -21,7 +18,3 @@ func _physics_process(_delta):
   # Ajusta la velocidad del movimiento
 	velocity = direccion*900  # Puedes ajustar esta velocidad según lo necesites
 	move_and_slide()
-	
-
-
-	
