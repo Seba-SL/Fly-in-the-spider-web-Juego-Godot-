@@ -1,9 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://co6leie14213s"]
+[gd_scene load_steps=6 format=3 uid="uid://cgtibp3k1bfal"]
 
-[ext_resource type="Script" path="res://scripts/Araña.gd" id="1_flwim"]
+[ext_resource type="Script" path="res://character_body_2d.gd" id="1_71k5p"]
 [ext_resource type="Texture2D" uid="uid://d2fehljokil0" path="res://recursos/art/Araña/tarantula.png" id="2_nx13q"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_kkh61"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_knumr"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -14,51 +14,44 @@ animations = [{
 "speed": 1.0
 }]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vp184"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cwwm4"]
 bg_color = Color(0, 0.607843, 0.392157, 1)
 corner_radius_top_left = 5
 corner_radius_top_right = 5
 corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5qysp"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1w8lt"]
 radius = 18.0
 height = 82.0
 
-[node name="araña" type="Node2D"]
+[node name="Araña" type="CharacterBody2D"]
+script = ExtResource("1_71k5p")
 
-[node name="Araña" type="CharacterBody2D" parent="."]
-disable_mode = 2
-collision_layer = 2
-collision_mask = 7
-input_pickable = true
-safe_margin = 0.001
-script = ExtResource("1_flwim")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Araña"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+process_priority = 1
 position = Vector2(307, 276)
 scale = Vector2(0.2, 0.2)
-sprite_frames = SubResource("SpriteFrames_kkh61")
-frame_progress = 0.678697
+sprite_frames = SubResource("SpriteFrames_knumr")
 
-[node name="GUI" type="CanvasLayer" parent="Araña"]
+[node name="GUI" type="CanvasLayer" parent="."]
 
-[node name="Label" type="Label" parent="Araña/GUI"]
+[node name="Label" type="Label" parent="GUI"]
 offset_left = 27.0
 offset_top = 41.0
 offset_right = 158.0
 offset_bottom = 64.0
 text = "Tarantula Health"
 
-[node name="vida_araña" type="ProgressBar" parent="Araña/GUI"]
+[node name="vida_araña" type="ProgressBar" parent="GUI"]
 offset_left = 18.0
 offset_top = 15.0
 offset_right = 208.0
 offset_bottom = 42.0
-theme_override_styles/fill = SubResource("StyleBoxFlat_vp184")
+theme_override_styles/fill = SubResource("StyleBoxFlat_cwwm4")
 step = 0.1
 
-[node name="Camera2D" type="Camera2D" parent="Araña"]
+[node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(-1, -1)
 offset = Vector2(100, 0)
 ignore_rotation = false
@@ -69,7 +62,7 @@ limit_right = 1100
 limit_bottom = 1000
 position_smoothing_enabled = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Araña"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 process_mode = 3
 position = Vector2(307, 277)
-shape = SubResource("CapsuleShape2D_5qysp")
+shape = SubResource("CapsuleShape2D_1w8lt")

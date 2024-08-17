@@ -2,13 +2,13 @@
 
 [ext_resource type="Texture2D" uid="uid://dl5adom4e7fi6" path="res://recursos/art/Escenario/696.jpg" id="1_0orfl"]
 [ext_resource type="Script" path="res://scripts/escenario.gd" id="1_umvp1"]
-[ext_resource type="PackedScene" uid="uid://co6leie14213s" path="res://escenas/araña.tscn" id="2_bys4i"]
+[ext_resource type="PackedScene" uid="uid://cgtibp3k1bfal" path="res://escenas/araña.tscn" id="2_bys4i"]
 [ext_resource type="PackedScene" uid="uid://c46wsdj422tan" path="res://escenas/mosca.tscn" id="3_t7gfn"]
-[ext_resource type="PackedScene" uid="uid://bl4r7fgvm7obd" path="res://escenas/roca.tscn" id="4_72bm7"]
 [ext_resource type="PackedScene" uid="uid://dqgjch5jxkjb0" path="res://escenas/arbusto_1.tscn" id="5_vo5q5"]
 [ext_resource type="PackedScene" uid="uid://dwjm0m7006dp4" path="res://escenas/hierba.tscn" id="6_ndqne"]
 [ext_resource type="PackedScene" uid="uid://ca3ew7rbsudrb" path="res://escenas/hoja.tscn" id="7_nfh66"]
 [ext_resource type="Texture2D" uid="uid://c4x8ubwds6x8x" path="res://recursos/art/Menu/quit.png" id="8_c2pye"]
+[ext_resource type="PackedScene" uid="uid://bci1arwqkhfq0" path="res://escenas/Roca.tscn" id="9_jyhs2"]
 
 [node name="Escenario" type="Node2D"]
 script = ExtResource("1_umvp1")
@@ -18,22 +18,11 @@ position = Vector2(600, 600)
 rotation = 3.14159
 texture = ExtResource("1_0orfl")
 
-[node name="araña" parent="." instance=ExtResource("2_bys4i")]
-z_as_relative = false
-position = Vector2(440, 544)
-
 [node name="Mosca" parent="." instance=ExtResource("3_t7gfn")]
 physics_interpolation_mode = 1
 clip_children = 1
 z_as_relative = false
 position = Vector2(648, 552)
-
-[node name="Roca" parent="." instance=ExtResource("4_72bm7")]
-process_priority = 1
-process_physics_priority = 1
-physics_interpolation_mode = 1
-z_as_relative = false
-position = Vector2(565, 448)
 
 [node name="Arbusto1" parent="." instance=ExtResource("5_vo5q5")]
 position = Vector2(1003, 84)
@@ -59,5 +48,14 @@ offset_top = 968.0
 offset_right = 832.0
 offset_bottom = 1000.0
 text = "Quit"
+
+[node name="Araña" parent="." instance=ExtResource("2_bys4i")]
+position = Vector2(96, 232)
+collision_layer = 2
+collision_mask = 7
+
+[node name="StaticBody2D" parent="." instance=ExtResource("9_jyhs2")]
+position = Vector2(440, 384)
+collision_mask = 7
 
 [connection signal="pressed" from="volverAlMenu" to="." method="_on_volver_al_menu_pressed"]

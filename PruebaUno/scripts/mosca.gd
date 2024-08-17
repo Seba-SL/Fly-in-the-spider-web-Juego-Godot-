@@ -19,10 +19,8 @@ func _physics_process(delta):
 	var direccion = Input.get_vector("ui_left","ui_right","ui_up","ui_down" )
 
   # Ajusta la velocidad del movimiento
-	var velocidad = 900  # Puedes ajustar esta velocidad según lo necesites
-
-	# Mueve el nodo basado en la dirección
-	position += direccion * velocidad * delta
+	velocity = direccion*900  # Puedes ajustar esta velocidad según lo necesites
+	move_and_slide()
 	
 
 
