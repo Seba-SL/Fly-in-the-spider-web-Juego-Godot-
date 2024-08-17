@@ -18,13 +18,10 @@ func _process(_delta):
 		get_tree().change_scene_to_file("res://escenas/menu_inicio.tscn")
 	pass
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	var direccion = Input.get_vector("alt_izq","alt_derecha","alt_arriba","alt_abajo" )
-
-  # Ajusta la velocidad del movimiento
-	var velocidad = 250  # Puedes ajustar esta velocidad según lo necesites
-  # Ajusta la velocidad del movimiento
-	velocity = direccion*250  # Puedes ajustar esta velocidad según lo necesites
+	# Ajusta la velocidad del movimiento
+	velocity = direccion*400  # Puedes ajustar esta velocidad según lo necesites
 	move_and_slide()
 
 	pass

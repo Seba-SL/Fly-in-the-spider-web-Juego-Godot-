@@ -9,8 +9,8 @@ height = 86.1542
 [node name="StaticBody2D" type="StaticBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0, -8)
-scale = Vector2(0.214844, 0.203125)
+position = Vector2(8, -23)
+scale = Vector2(0.326172, 0.316406)
 texture = ExtResource("1_cqwq3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

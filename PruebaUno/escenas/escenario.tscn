@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://doi5y5p3v13ld"]
+[gd_scene load_steps=11 format=3 uid="uid://doi5y5p3v13ld"]
 
 [ext_resource type="Texture2D" uid="uid://dl5adom4e7fi6" path="res://recursos/art/Escenario/696.jpg" id="1_0orfl"]
 [ext_resource type="Script" path="res://scripts/escenario.gd" id="1_umvp1"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://ca3ew7rbsudrb" path="res://escenas/hoja.tscn" id="7_nfh66"]
 [ext_resource type="Texture2D" uid="uid://c4x8ubwds6x8x" path="res://recursos/art/Menu/quit.png" id="8_c2pye"]
 [ext_resource type="PackedScene" uid="uid://bci1arwqkhfq0" path="res://escenas/Roca.tscn" id="9_jyhs2"]
+[ext_resource type="PackedScene" uid="uid://cyge6qquucyi5" path="res://escenas/paredes_limites.tscn" id="10_y2wj3"]
 
 [node name="Escenario" type="Node2D"]
 script = ExtResource("1_umvp1")
@@ -54,8 +55,22 @@ position = Vector2(96, 232)
 collision_layer = 2
 collision_mask = 7
 
-[node name="StaticBody2D" parent="." instance=ExtResource("9_jyhs2")]
+[node name="Roca" parent="." instance=ExtResource("9_jyhs2")]
 position = Vector2(440, 384)
 collision_mask = 7
+
+[node name="ParedesLimites" parent="." instance=ExtResource("10_y2wj3")]
+position = Vector2(-72, -8)
+
+[node name="ParedesLimites2" parent="." instance=ExtResource("10_y2wj3")]
+position = Vector2(88, -64)
+rotation = 1.5708
+
+[node name="ParedesLimites3" parent="." instance=ExtResource("10_y2wj3")]
+position = Vector2(-216, 1008)
+
+[node name="ParedesLimites4" parent="." instance=ExtResource("10_y2wj3")]
+position = Vector2(1208, -224)
+rotation = 1.5708
 
 [connection signal="pressed" from="volverAlMenu" to="." method="_on_volver_al_menu_pressed"]

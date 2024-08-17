@@ -2,15 +2,20 @@
 
 [ext_resource type="Texture2D" uid="uid://wf1kur8sxulv" path="res://recursos/art/Escenario/Herb_Basil_26368.png" id="1_ha65f"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_7du5s"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_atwel"]
+radius = 17.07
+height = 128.0
 
 [node name="Arbusto2" type="Node2D"]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-shape = SubResource("CircleShape2D_7du5s")
+rotation = 1.46608
+shape = SubResource("CapsuleShape2D_atwel")
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(0, -7)
+rotation = -0.488692
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_ha65f")
