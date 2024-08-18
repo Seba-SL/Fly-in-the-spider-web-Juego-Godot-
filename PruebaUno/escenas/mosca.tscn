@@ -1,17 +1,44 @@
-[gd_scene load_steps=8 format=3 uid="uid://c46wsdj422tan"]
+[gd_scene load_steps=11 format=3 uid="uid://c46wsdj422tan"]
 
 [ext_resource type="Texture2D" uid="uid://dsn6x54jtqknv" path="res://recursos/art/Mosca/volar.png" id="1_ekk8c"]
 [ext_resource type="Script" path="res://scripts/mosca.gd" id="1_sukv1"]
+[ext_resource type="Texture2D" uid="uid://by752i8m7tr24" path="res://recursos/art/Mosca/abajo.png" id="2_cevx3"]
 [ext_resource type="AudioStream" uid="uid://cs0wkbkrt3nb" path="res://recursos/art/Audio/punch-2-123106.mp3" id="3_4ykhn"]
+[ext_resource type="Texture2D" uid="uid://dmcwxk62dmkc7" path="res://recursos/art/Mosca/derecha.png" id="4_ckxcq"]
+[ext_resource type="Texture2D" uid="uid://b4wvfjqidybwe" path="res://recursos/art/Mosca/izquierda.png" id="5_qlx7m"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dmj66"]
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("2_cevx3")
+}],
+"loop": true,
+"name": &"abajo",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("1_ekk8c")
 }],
 "loop": true,
-"name": &"default",
+"name": &"arriba",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_ckxcq")
+}],
+"loop": true,
+"name": &"derecha",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_qlx7m")
+}],
+"loop": true,
+"name": &"izquierda",
 "speed": 5.0
 }]
 
@@ -39,6 +66,7 @@ script = ExtResource("1_sukv1")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="mosca"]
 scale = Vector2(0.1, 0.1)
 sprite_frames = SubResource("SpriteFrames_dmj66")
+animation = &"izquierda"
 
 [node name="GUI" type="CanvasLayer" parent="mosca"]
 

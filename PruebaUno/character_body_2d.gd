@@ -18,12 +18,28 @@ func _process(_delta):
 	pass
 
 func _physics_process(_delta):
-	var direccion = Input.get_vector("alt_izq","alt_derecha","alt_arriba","alt_abajo" )
-	# Ajusta la velocidad del movimiento
-	velocity = direccion*400  # Puedes ajustar esta velocidad según lo necesites
-	_on_animated_sprite_2d_frame_changed()
-	move_and_slide()
 
+	var direccion = Input.get_vector("alt_izq","alt_derecha","alt_arriba","alt_abajo" )
+	
+	# Ajusta la velocidad del movimiento
+	if Input.is_action_pressed("alt_arriba"):
+		$AnimatedSprite2D.play("arriba")
+	
+	if Input.is_action_pressed("alt_abajo"):
+		$AnimatedSprite2D.play("abajo")
+	
+	if Input.is_action_pressed("alt_izq"):
+		$AnimatedSprite2D.play("izquierda")
+		
+	if Input.is_action_pressed("alt_derecha"):
+		$AnimatedSprite2D.play("derecha")
+	
+	velocity = direccion*400  # Puedes ajustar esta velocidad según lo necesitess
+	
+	
+		
+	move_and_slide()
+	
 	pass
 
 

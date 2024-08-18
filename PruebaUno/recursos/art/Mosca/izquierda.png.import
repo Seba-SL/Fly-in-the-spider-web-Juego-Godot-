@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://n63578sn4vgb"
-valid=false
+uid="uid://b4wvfjqidybwe"
+path="res://.godot/imported/izquierda.png-c28b2bceff6b152905ffe755c84b3587.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
-source_file="res://recursos/art/Araña/animatearaña.png"
+source_file="res://recursos/art/Mosca/izquierda.png"
+dest_files=["res://.godot/imported/izquierda.png-c28b2bceff6b152905ffe755c84b3587.ctex"]
 
 [params]
 

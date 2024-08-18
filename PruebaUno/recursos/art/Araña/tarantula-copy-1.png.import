@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c08dr2nl48r41"
-path="res://.godot/imported/PngItem_3634918.png-d501f28004819eb676ac7be439f6b2f0.ctex"
+uid="uid://d22nq8v1p0rno"
+path="res://.godot/imported/tarantula-copy-1.png-b4f4776a175886403a02fbad3f57eb98.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://recursos/art/Araña/PngItem_3634918.png"
-dest_files=["res://.godot/imported/PngItem_3634918.png-d501f28004819eb676ac7be439f6b2f0.ctex"]
+source_file="res://recursos/art/Araña/tarantula-copy-1.png"
+dest_files=["res://.godot/imported/tarantula-copy-1.png-b4f4776a175886403a02fbad3f57eb98.ctex"]
 
 [params]
 

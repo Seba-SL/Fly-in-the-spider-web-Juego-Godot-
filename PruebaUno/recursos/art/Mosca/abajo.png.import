@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c08dr2nl48r41"
-path="res://.godot/imported/PngItem_3634918.png-d501f28004819eb676ac7be439f6b2f0.ctex"
+uid="uid://by752i8m7tr24"
+path="res://.godot/imported/abajo.png-ea1af782403496bbc0a20573ca304e5a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://recursos/art/Araña/PngItem_3634918.png"
-dest_files=["res://.godot/imported/PngItem_3634918.png-d501f28004819eb676ac7be439f6b2f0.ctex"]
+source_file="res://recursos/art/Mosca/abajo.png"
+dest_files=["res://.godot/imported/abajo.png-ea1af782403496bbc0a20573ca304e5a.ctex"]
 
 [params]
 

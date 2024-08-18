@@ -13,9 +13,23 @@ func _ready():
 	
 
 func _physics_process(_delta):
-	var direccion = Input.get_vector("ui_left","ui_right","ui_up","ui_down" )
-
+	
+	var direccion = Input.get_vector("ui_left", "ui_right" ,"ui_up","ui_down")
+	
+	
+	if Input.is_action_pressed("ui_up"):
+		$AnimatedSprite2D.play("arriba")
+	
+	if Input.is_action_pressed("ui_down"):
+		$AnimatedSprite2D.play("abajo")
+	
+	if Input.is_action_pressed("ui_left"):
+		$AnimatedSprite2D.play("izquierda")
+		
+	if Input.is_action_pressed("ui_right"):
+		$AnimatedSprite2D.play("derecha")
   # Ajusta la velocidad del movimiento
+
 	velocity = direccion*900  # Puedes ajustar esta velocidad según lo necesites
 	move_and_slide()
 
@@ -26,6 +40,7 @@ func _process(_delta):
 
 func _on_area_daño_area_exited(_area: Area2D) -> void:
 	$GUI/vida_mosca.value -= 20
+	
 	$"../Punch-2-123106".play()
 	
 	pass # Replace with function body.
