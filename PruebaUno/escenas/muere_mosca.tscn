@@ -1,0 +1,60 @@
+[gd_scene load_steps=6 format=3 uid="uid://brk2irj43nkb8"]
+
+[ext_resource type="Script" path="res://scripts/muere_mosca.gd" id="1_bt0w7"]
+[ext_resource type="Texture2D" uid="uid://b01rma6b6vfob" path="res://recursos/art/Menu/muereAraña.jpeg" id="1_vj2m8"]
+[ext_resource type="FontFile" uid="uid://dtyyx0ejtk2dv" path="res://recursos/fonts/Xolonium-Regular.ttf" id="2_8gdcm"]
+[ext_resource type="AudioStream" uid="uid://pgh21syny2j" path="res://recursos/art/Audio/gameover.wav" id="3_afr5c"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dgaqq"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 0)
+border_blend = true
+shadow_color = Color(0, 0, 0, 0.870588)
+shadow_size = 39
+
+[node name="Muere_Mosca" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bt0w7")
+
+[node name="MuereAraña" type="Sprite2D" parent="."]
+position = Vector2(450, 309)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("1_vj2m8")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 54.0
+offset_right = 867.0
+offset_bottom = 173.0
+theme_override_fonts/font = ExtResource("2_8gdcm")
+theme_override_font_sizes/font_size = 90
+theme_override_styles/normal = SubResource("StyleBoxFlat_dgaqq")
+text = "The fly has fallen"
+
+[node name="Gameover" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(781, 144)
+stream = ExtResource("3_afr5c")
+autoplay = true
+
+[node name="Button" type="Button" parent="."]
+self_modulate = Color(0.877616, 0.877616, 0.877616, 1)
+layout_mode = 0
+offset_left = 30.0
+offset_top = 577.0
+offset_right = 216.0
+offset_bottom = 646.0
+theme_override_fonts/font = ExtResource("2_8gdcm")
+theme_override_font_sizes/font_size = 50
+text = "Return"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -21,7 +21,7 @@ func _physics_process(_delta):
 
 func _process(_delta):
 	if $GUI/vida_mosca.value == 0 :
-		get_tree().change_scene_to_file("res://escenas/menu_inicio.tscn")
+		get_tree().change_scene_to_file("res://escenas/muere_mosca.tscn")
 	pass
 
 func _on_area_daño_area_exited(_area: Area2D) -> void:
