@@ -30,11 +30,13 @@ func _physics_process(_delta):
 		$AnimatedSprite2D.play("derecha")
   # Ajusta la velocidad del movimiento
 
-	velocity = direccion*900  # Puedes ajustar esta velocidad según lo necesites
+	velocity = direccion*1900  # Puedes ajustar esta velocidad según lo necesites
 	move_and_slide()
 
 func _process(_delta):
 	if $GUI/vida_mosca.value == 0 :
+		$AnimatedSprite2D.play("Muerte")
+		await get_tree().create_timer(3).timeout
 		get_tree().change_scene_to_file("res://escenas/muere_mosca.tscn")
 	pass
 
@@ -43,7 +45,9 @@ func _on_area_daño_area_exited(_area: Area2D) -> void:
 	
 	$GUI/vida_mosca.value -= 20
 	$"../Punch-2-123106".play()
-	await get_tree().create_timer(3).timeout
+	await get_tree().create_timer(2).timeout
+	$AnimatedSprite2D.play("arriba_dañado")
+	
 	pass # Replace with function body.
 
 

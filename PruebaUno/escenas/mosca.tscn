@@ -1,7 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://c46wsdj422tan"]
+[gd_scene load_steps=13 format=3 uid="uid://c46wsdj422tan"]
 
 [ext_resource type="Texture2D" uid="uid://dsn6x54jtqknv" path="res://recursos/art/Mosca/volar.png" id="1_ekk8c"]
 [ext_resource type="Script" path="res://scripts/mosca.gd" id="1_sukv1"]
+[ext_resource type="Texture2D" uid="uid://bevyxft6ygl72" path="res://recursos/art/Mosca/ataud.png" id="2_as0qy"]
 [ext_resource type="Texture2D" uid="uid://by752i8m7tr24" path="res://recursos/art/Mosca/abajo.png" id="2_cevx3"]
 [ext_resource type="AudioStream" uid="uid://cs0wkbkrt3nb" path="res://recursos/art/Audio/punch-2-123106.mp3" id="3_4ykhn"]
 [ext_resource type="Texture2D" uid="uid://wxu2mei5ehso" path="res://recursos/art/Mosca/Dañada/volar_dañadoo.png" id="4_8xjrh"]
@@ -10,6 +11,14 @@
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dmj66"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_as0qy")
+}],
+"loop": true,
+"name": &"Muerte",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_cevx3")
@@ -114,6 +123,8 @@ shape = SubResource("CircleShape2D_v0a66")
 [node name="Punch-2-123106" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(-29, 15)
 stream = ExtResource("3_4ykhn")
+volume_db = 3.2
+attenuation = 0.0044871
 
 [connection signal="area_exited" from="mosca/Area_daño" to="mosca" method="_on_area_daño_area_exited"]
 [connection signal="finished" from="Punch-2-123106" to="mosca" method="_on_punch_2123106_finished"]

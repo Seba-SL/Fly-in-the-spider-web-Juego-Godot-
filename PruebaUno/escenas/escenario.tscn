@@ -1,8 +1,9 @@
-[gd_scene load_steps=13 format=3 uid="uid://doi5y5p3v13ld"]
+[gd_scene load_steps=14 format=3 uid="uid://doi5y5p3v13ld"]
 
 [ext_resource type="Texture2D" uid="uid://dl5adom4e7fi6" path="res://recursos/art/Escenario/696.jpg" id="1_0orfl"]
 [ext_resource type="Script" path="res://scripts/escenario.gd" id="1_umvp1"]
 [ext_resource type="PackedScene" uid="uid://cgtibp3k1bfal" path="res://escenas/araña.tscn" id="2_bys4i"]
+[ext_resource type="Texture2D" uid="uid://c55yc4v8o0ktu" path="res://recursos/art/Escenario/ataque.png" id="2_gso4h"]
 [ext_resource type="PackedScene" uid="uid://c46wsdj422tan" path="res://escenas/mosca.tscn" id="3_t7gfn"]
 [ext_resource type="PackedScene" uid="uid://dqgjch5jxkjb0" path="res://escenas/arbusto_1.tscn" id="5_vo5q5"]
 [ext_resource type="PackedScene" uid="uid://dwjm0m7006dp4" path="res://escenas/hierba.tscn" id="6_ndqne"]
@@ -20,6 +21,14 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_gso4h")
+}],
+"loop": true,
+"name": &"muerte",
 "speed": 5.0
 }]
 
