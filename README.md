@@ -2,7 +2,7 @@
  </h1>
 
 <p align="left">
-  <img src="https://github.com/user-attachments/assets/699f82e9-3a41-4dbf-bdc0-f78413b78eb9" alt="imagen" width="35"/> Videojuego simple de prueba utilizando el motor Godot de desarrollo de videojuegos de código abierto y gratuito ( https://godotengine.org/ ).
+  <img src="https://github.com/user-attachments/assets/699f82e9-3a41-4dbf-bdc0-f78413b78eb9" alt="imagen" width="40"/> Videojuego simple de prueba utilizando el motor Godot de desarrollo de videojuegos de código abierto y gratuito ( https://godotengine.org/ ).
 </p>
 
  
