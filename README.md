@@ -35,8 +35,8 @@ Sistemas de Escenas y Nodos: El motor se organiza en escenas donde se crean los 
 
 Principales
 
-Nodo 2D: Se genera en un escenario en dos dimensiones.
 
+![imagen](https://github.com/user-attachments/assets/8de4b939-1016-42f6-b381-8a068beafd4f) Nodo 2D: Se genera en un escenario en dos dimensiones.
 <ul>
   <li> CharacterBody2D: Plantilla de personaje 2D.</li>
   <li>CharacterBody2D: Plantilla de personaje 2D.</li>
@@ -46,7 +46,7 @@ Nodo 2D: Se genera en un escenario en dos dimensiones.
   <li>Camera 2D</li>
 </ul>
 
-Control: Base para todos los nodos relacionados con la interfaz de usuario.
+![imagen](https://github.com/user-attachments/assets/bb6c0068-838b-4b63-ad00-ad3379bcfad6) Control: Base para todos los nodos relacionados con la interfaz de usuario.
 
 <h2>Menu de inicio:  </h2>
  <img src="https://github.com/user-attachments/assets/1183e69f-1a17-4bc9-89c8-5a629d249995" alt="imagen" width="170"/> 
