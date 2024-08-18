@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://c46wsdj422tan"]
+[gd_scene load_steps=14 format=3 uid="uid://c46wsdj422tan"]
 
 [ext_resource type="Texture2D" uid="uid://dsn6x54jtqknv" path="res://recursos/art/Mosca/volar.png" id="1_ekk8c"]
 [ext_resource type="Script" path="res://scripts/mosca.gd" id="1_sukv1"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://wxu2mei5ehso" path="res://recursos/art/Mosca/Dañada/volar_dañadoo.png" id="4_8xjrh"]
 [ext_resource type="Texture2D" uid="uid://dmcwxk62dmkc7" path="res://recursos/art/Mosca/derecha.png" id="4_ckxcq"]
 [ext_resource type="Texture2D" uid="uid://b4wvfjqidybwe" path="res://recursos/art/Mosca/izquierda.png" id="5_qlx7m"]
+[ext_resource type="Script" path="res://escenas/vida_mosca.gd" id="8_7mtsh"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dmj66"]
 animations = [{
@@ -100,6 +101,7 @@ offset_bottom = 33.0
 theme_override_styles/fill = SubResource("StyleBoxFlat_uir5r")
 step = 1.0
 value = 100.0
+script = ExtResource("8_7mtsh")
 metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="mosca/GUI"]

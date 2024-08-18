@@ -44,8 +44,9 @@ func _on_area_daño_area_exited(_area: Area2D) -> void:
 	$AnimatedSprite2D.play("arriba_dañado")
 	
 	$GUI/vida_mosca.value -= 20
+	
 	$"../Punch-2-123106".play()
-	await get_tree().create_timer(2).timeout
+	await get_tree().create_timer(1.2).timeout
 	$AnimatedSprite2D.play("arriba_dañado")
 	
 	pass # Replace with function body.

@@ -54,3 +54,7 @@ alt_abajo={
 2d_physics/layer_1="Entorno"
 2d_physics/layer_2="Personajes"
 2d_physics/layer_3="itemss"
+
+[rendering]
+
+textures/vram_compression/import_etc2_astc=true
