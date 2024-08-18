@@ -1,14 +1,17 @@
-# Fly-in-the-spider-web-Juego-Godot-
+<h1><img src="https://github.com/user-attachments/assets/1fa6633c-19d2-48ab-b2ad-457f788a08ee" alt="imagen" width="40"/> Fly-in-the-spider-web-Juego-Godot-
+ </h1>
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/699f82e9-3a41-4dbf-bdc0-f78413b78eb9" alt="imagen" width="100"/>
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/699f82e9-3a41-4dbf-bdc0-f78413b78eb9" alt="imagen" width="35"/> Videojuego simple de prueba utilizando el motor Godot de desarrollo de videojuegos de código abierto y gratuito ( https://godotengine.org/ ).
 </p>
 
- Videojuego simple de prueba utilizando el motor Godot de desarrollo de videojuegos de código abierto y gratuito ( https://godotengine.org/ ).
  
  El editor de Godot proporciona herramientas para la creación de escenas, edición de scripts, diseño de UI, animaciones y más.
  
- Los scripts se pueden programar en varios lenguajes como: 
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/4e6f6bac-473a-4c5c-973f-53c844f972a1" alt="imagen" width="60"/> Los scripts se pueden programar en varios lenguajes como: 
+</p>
+
  
  <ol>
   <li>
@@ -27,6 +30,17 @@
 
 
 En este caso se decidio GDScript.
+
+Sistemas de Escenas y Nodos: El motor se organiza en escenas donde se crean los nodos, estructuras de objetos a los que se les puede asociar scripts, imagenes, animaciónes, audio, etc. 
+
+Principales
+
+Nodo 2D: Se genera en un escenario en dos dimensiones.
+
+CharacterBody2D: Plantilla de personaje 2D.
+
+StaticBody2D: Plantilla de cuerpo estatico 2D.
+
 
 
 [Grabación de pantalla primeros modelos](https://github.com/user-attachments/assets/1719485c-1b15-4a38-bd3c-e42635c68205)
