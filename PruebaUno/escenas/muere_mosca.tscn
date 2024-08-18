@@ -41,11 +41,6 @@ theme_override_font_sizes/font_size = 90
 theme_override_styles/normal = SubResource("StyleBoxFlat_dgaqq")
 text = "The fly has fallen"
 
-[node name="Gameover" type="AudioStreamPlayer2D" parent="."]
-position = Vector2(781, 144)
-stream = ExtResource("3_afr5c")
-autoplay = true
-
 [node name="Button" type="Button" parent="."]
 self_modulate = Color(0.877616, 0.877616, 0.877616, 1)
 layout_mode = 0
@@ -56,5 +51,11 @@ offset_bottom = 646.0
 theme_override_fonts/font = ExtResource("2_8gdcm")
 theme_override_font_sizes/font_size = 50
 text = "Return"
+
+[node name="Gameover" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(781, 144)
+stream = ExtResource("3_afr5c")
+volume_db = 1.486
+autoplay = true
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

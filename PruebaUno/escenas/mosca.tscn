@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://c46wsdj422tan"]
+[gd_scene load_steps=8 format=3 uid="uid://c46wsdj422tan"]
 
 [ext_resource type="Texture2D" uid="uid://dsn6x54jtqknv" path="res://recursos/art/Mosca/volar.png" id="1_ekk8c"]
 [ext_resource type="Script" path="res://scripts/mosca.gd" id="1_sukv1"]
+[ext_resource type="AudioStream" uid="uid://cs0wkbkrt3nb" path="res://recursos/art/Audio/punch-2-123106.mp3" id="3_4ykhn"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dmj66"]
 animations = [{
@@ -73,4 +74,9 @@ self_modulate = Color(1, 0.156863, 1, 1)
 position = Vector2(0, 3)
 shape = SubResource("CircleShape2D_v0a66")
 
+[node name="Punch-2-123106" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(-29, 15)
+stream = ExtResource("3_4ykhn")
+
 [connection signal="area_exited" from="mosca/Area_daño" to="mosca" method="_on_area_daño_area_exited"]
+[connection signal="finished" from="Punch-2-123106" to="mosca" method="_on_punch_2123106_finished"]

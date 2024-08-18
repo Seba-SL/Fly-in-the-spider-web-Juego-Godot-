@@ -26,4 +26,10 @@ func _process(_delta):
 
 func _on_area_daño_area_exited(_area: Area2D) -> void:
 	$GUI/vida_mosca.value -= 20
+	$"../Punch-2-123106".play()
+	
+	pass # Replace with function body.
+
+
+func _on_punch_2123106_finished() -> void:
 	pass # Replace with function body.
