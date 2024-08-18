@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://6r25qvtrqyj4"]
+[gd_scene load_steps=10 format=3 uid="uid://6r25qvtrqyj4"]
 
 [ext_resource type="Script" path="res://scripts/menu_inicio.gd" id="1_eprkv"]
 [ext_resource type="Texture2D" uid="uid://b5spno13uw4j6" path="res://recursos/art/Menu/menu.jpeg" id="1_vm0qb"]
 [ext_resource type="FontFile" uid="uid://dtyyx0ejtk2dv" path="res://recursos/fonts/Xolonium-Regular.ttf" id="4_0urwb"]
+[ext_resource type="AudioStream" uid="uid://c78kxsftn2jy1" path="res://recursos/art/Audio/House In a Forest Loop.ogg" id="5_cdk64"]
 [ext_resource type="Texture2D" uid="uid://c46pj02tk2j00" path="res://recursos/art/Araña/telarana(1).png" id="5_l80km"]
 
 [sub_resource type="Theme" id="Theme_o1fst"]
@@ -102,6 +103,11 @@ theme_override_fonts/font = ExtResource("4_0urwb")
 theme_override_font_sizes/font_size = 60
 theme_override_styles/normal = SubResource("StyleBoxFlat_fbulh")
 text = "Fly in the spider web"
+
+[node name="HouseInAForestLoop" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(381, 538)
+stream = ExtResource("5_cdk64")
+autoplay = true
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

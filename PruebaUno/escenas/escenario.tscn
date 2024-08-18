@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://doi5y5p3v13ld"]
+[gd_scene load_steps=12 format=3 uid="uid://doi5y5p3v13ld"]
 
 [ext_resource type="Texture2D" uid="uid://dl5adom4e7fi6" path="res://recursos/art/Escenario/696.jpg" id="1_0orfl"]
 [ext_resource type="Script" path="res://scripts/escenario.gd" id="1_umvp1"]
@@ -10,6 +10,7 @@
 [ext_resource type="FontFile" uid="uid://dtyyx0ejtk2dv" path="res://recursos/fonts/Xolonium-Regular.ttf" id="8_8f3t6"]
 [ext_resource type="PackedScene" uid="uid://bci1arwqkhfq0" path="res://escenas/Roca.tscn" id="9_jyhs2"]
 [ext_resource type="PackedScene" uid="uid://cyge6qquucyi5" path="res://escenas/paredes_limites.tscn" id="10_y2wj3"]
+[ext_resource type="AudioStream" uid="uid://065lqkncuv4g" path="res://recursos/art/Audio/bosque-con-abejas-78867.mp3" id="11_eqkjw"]
 
 [node name="Escenario" type="Node2D"]
 script = ExtResource("1_umvp1")
@@ -68,5 +69,10 @@ position = Vector2(-368, 1048)
 [node name="ParedesLimites4" parent="." instance=ExtResource("10_y2wj3")]
 position = Vector2(1208, -224)
 rotation = 1.5708
+
+[node name="Bosque-con-abejas-78867" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(600, 968)
+stream = ExtResource("11_eqkjw")
+autoplay = true
 
 [connection signal="pressed" from="volverAlMenu" to="." method="_on_volver_al_menu_pressed"]
