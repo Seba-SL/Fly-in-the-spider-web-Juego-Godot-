@@ -1,4 +1,4 @@
-<h1><img src="https://github.com/user-attachments/assets/1fa6633c-19d2-48ab-b2ad-457f788a08ee" alt="imagen" width="40"/> Fly-in-the-spider-web-Juego-Godot-
+<h1><img src="https://github.com/user-attachments/assets/1fa6633c-19d2-48ab-b2ad-457f788a08ee" alt="imagen" width="60"/> Fly-in-the-spider-web-Juego-Godot-
  </h1>
 
 <p align="left">
@@ -9,7 +9,7 @@
  El editor de Godot proporciona herramientas para la creación de escenas, edición de scripts, diseño de UI, animaciones y más.
  
 <p align="left">
-  <img src="https://github.com/user-attachments/assets/4e6f6bac-473a-4c5c-973f-53c844f972a1" alt="imagen" width="60"/> Los scripts se pueden programar en varios lenguajes como: 
+  <img src="https://github.com/user-attachments/assets/4e6f6bac-473a-4c5c-973f-53c844f972a1" alt="imagen" width="30"/> Los scripts se pueden programar en varios lenguajes como: 
 </p>
 
  
