@@ -48,22 +48,20 @@ Nodo 2D: Se genera en un escenario en dos dimensiones.
 
 Control: Base para todos los nodos relacionados con la interfaz de usuario.
 
-<h2>Menu de inicio</h2>
+<h2>Menu de inicio:  </h2>
+ <img src="https://github.com/user-attachments/assets/1183e69f-1a17-4bc9-89c8-5a629d249995" alt="imagen" width="170"/> 
 
-![imagen](https://github.com/user-attachments/assets/1183e69f-1a17-4bc9-89c8-5a629d249995)
+<h2>Araña:</h2>
+
+ <img src="https://github.com/user-attachments/assets/5b3fe5f3-ad05-45c0-95ad-2ef9c7c3c336" alt="imagen" width="170"/> 
 
 
-<h2>Araña</h2>
-
-![imagen](https://github.com/user-attachments/assets/5b3fe5f3-ad05-45c0-95ad-2ef9c7c3c336)
+<h2>Mosca: </h2>
+ <img src="https://github.com/user-attachments/assets/4893188b-183a-4800-828b-93a4e164420e" alt="imagen" width="170"/>
 
 
 
 [Grabación de pantalla primeros modelos](https://github.com/user-attachments/assets/1719485c-1b15-4a38-bd3c-e42635c68205)
-
-
-
-
 
 
 https://github.com/user-attachments/assets/63716d7e-43c9-4e8e-b36f-47dcd961bcdd
