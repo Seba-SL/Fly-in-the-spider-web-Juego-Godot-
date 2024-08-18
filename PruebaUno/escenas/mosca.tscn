@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://c46wsdj422tan"]
+[gd_scene load_steps=7 format=3 uid="uid://c46wsdj422tan"]
 
 [ext_resource type="Texture2D" uid="uid://dsn6x54jtqknv" path="res://recursos/art/Mosca/volar.png" id="1_ekk8c"]
 [ext_resource type="Script" path="res://scripts/mosca.gd" id="1_sukv1"]
@@ -24,12 +24,14 @@ corner_radius_bottom_left = 5
 [sub_resource type="CircleShape2D" id="CircleShape2D_71fi1"]
 radius = 21.0238
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_v0a66"]
+radius = 26.0
+
 [node name="Mosca" type="Node2D"]
 top_level = true
 position = Vector2(504, 333)
 
 [node name="mosca" type="CharacterBody2D" parent="."]
-process_priority = 1
 collision_mask = 7
 script = ExtResource("1_sukv1")
 
@@ -62,3 +64,13 @@ text = "Fly Health"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="mosca"]
 shape = SubResource("CircleShape2D_71fi1")
+
+[node name="Area_daño" type="Area2D" parent="mosca"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="mosca/Area_daño"]
+modulate = Color(1, 0.12549, 0.827451, 1)
+self_modulate = Color(1, 0.156863, 1, 1)
+position = Vector2(0, 3)
+shape = SubResource("CircleShape2D_v0a66")
+
+[connection signal="area_exited" from="mosca/Area_daño" to="mosca" method="_on_area_daño_area_exited"]
