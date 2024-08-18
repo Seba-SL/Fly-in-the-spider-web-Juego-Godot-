@@ -37,9 +37,25 @@ Principales
 
 Nodo 2D: Se genera en un escenario en dos dimensiones.
 
-CharacterBody2D: Plantilla de personaje 2D.
+<ul>
+  <li> CharacterBody2D: Plantilla de personaje 2D.</li>
+  <li>CharacterBody2D: Plantilla de personaje 2D.</li>
+  <li>AnimatedSprited2D</li>
+  <li>ColissionShape2D</li>
+  <li>AudioStreamPlayer2D</li>
+  <li>Camera 2D</li>
+</ul>
 
-StaticBody2D: Plantilla de cuerpo estatico 2D.
+Control: Base para todos los nodos relacionados con la interfaz de usuario.
+
+<h2>Menu de inicio</h2>
+
+![imagen](https://github.com/user-attachments/assets/1183e69f-1a17-4bc9-89c8-5a629d249995)
+
+
+<h2>Araña</h2>
+
+![imagen](https://github.com/user-attachments/assets/5b3fe5f3-ad05-45c0-95ad-2ef9c7c3c336)
 
 
 
