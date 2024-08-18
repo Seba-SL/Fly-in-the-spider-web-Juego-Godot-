@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://doi5y5p3v13ld"]
+[gd_scene load_steps=13 format=3 uid="uid://doi5y5p3v13ld"]
 
 [ext_resource type="Texture2D" uid="uid://dl5adom4e7fi6" path="res://recursos/art/Escenario/696.jpg" id="1_0orfl"]
 [ext_resource type="Script" path="res://scripts/escenario.gd" id="1_umvp1"]
@@ -12,13 +12,23 @@
 [ext_resource type="PackedScene" uid="uid://cyge6qquucyi5" path="res://escenas/paredes_limites.tscn" id="10_y2wj3"]
 [ext_resource type="AudioStream" uid="uid://065lqkncuv4g" path="res://recursos/art/Audio/bosque-con-abejas-78867.mp3" id="11_eqkjw"]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_k2vce"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_0orfl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="Escenario" type="Node2D"]
 script = ExtResource("1_umvp1")
 
-[node name="suelo" type="Sprite2D" parent="."]
-position = Vector2(600, 600)
-rotation = 3.14159
-texture = ExtResource("1_0orfl")
+[node name="Suelo" type="AnimatedSprite2D" parent="."]
+position = Vector2(600, 576)
+sprite_frames = SubResource("SpriteFrames_k2vce")
 
 [node name="Mosca" parent="." instance=ExtResource("3_t7gfn")]
 physics_interpolation_mode = 1
