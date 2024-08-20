@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://b5spno13uw4j6" path="res://recursos/art/Menu/menu.jpeg" id="1_vm0qb"]
 [ext_resource type="FontFile" uid="uid://dtyyx0ejtk2dv" path="res://recursos/fonts/Xolonium-Regular.ttf" id="4_0urwb"]
 [ext_resource type="AudioStream" uid="uid://c78kxsftn2jy1" path="res://recursos/art/Audio/House In a Forest Loop.ogg" id="5_cdk64"]
-[ext_resource type="Texture2D" uid="uid://c46pj02tk2j00" path="res://recursos/art/Araña/telarana(1).png" id="5_l80km"]
+[ext_resource type="Texture2D" uid="uid://hcrbcsvbev24" path="res://recursos/art/Araña/telarana(1).png" id="5_l80km"]
 
 [sub_resource type="Theme" id="Theme_o1fst"]
 
@@ -65,7 +65,7 @@ position = Vector2(496, 377)
 scale = Vector2(0.702344, 0.591406)
 texture = ExtResource("1_vm0qb")
 
-[node name="Telarana(1)" type="Sprite2D" parent="."]
+[node name="icono_esquina" type="Sprite2D" parent="."]
 position = Vector2(866, 30)
 scale = Vector2(0.119141, 0.0888672)
 texture = ExtResource("5_l80km")
