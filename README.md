@@ -35,19 +35,33 @@ Sistemas de Escenas y Nodos: El motor se organiza en escenas donde se crean los 
 
 Principales
 
-Nodo 2D: Se genera en un escenario en dos dimensiones.
 
-CharacterBody2D: Plantilla de personaje 2D.
+![imagen](https://github.com/user-attachments/assets/8de4b939-1016-42f6-b381-8a068beafd4f) Nodo 2D: Se genera en un escenario en dos dimensiones.
+<ul>
+  <li> CharacterBody2D: Plantilla de personaje 2D.</li>
+  <li>CharacterBody2D: Plantilla de personaje 2D.</li>
+  <li>AnimatedSprited2D</li>
+  <li>ColissionShape2D</li>
+  <li>AudioStreamPlayer2D</li>
+  <li>Camera 2D</li>
+</ul>
 
-StaticBody2D: Plantilla de cuerpo estatico 2D.
+![imagen](https://github.com/user-attachments/assets/bb6c0068-838b-4b63-ad00-ad3379bcfad6) Control: Base para todos los nodos relacionados con la interfaz de usuario.
+
+<h2>Menu de inicio:  </h2>
+ <img src="https://github.com/user-attachments/assets/1183e69f-1a17-4bc9-89c8-5a629d249995" alt="imagen" width="170"/> 
+
+<h2>Araña:</h2>
+
+ <img src="https://github.com/user-attachments/assets/5b3fe5f3-ad05-45c0-95ad-2ef9c7c3c336" alt="imagen" width="170"/> 
+
+
+<h2>Mosca: </h2>
+ <img src="https://github.com/user-attachments/assets/4893188b-183a-4800-828b-93a4e164420e" alt="imagen" width="170"/>
 
 
 
 [Grabación de pantalla primeros modelos](https://github.com/user-attachments/assets/1719485c-1b15-4a38-bd3c-e42635c68205)
-
-
-
-
 
 
 https://github.com/user-attachments/assets/63716d7e-43c9-4e8e-b36f-47dcd961bcdd
